@@ -1,1 +1,16 @@
+#IntelliJ
+.idea/
+*.iml
+#Eclipse
+.classpath
+.project
+.settings/
+#java compiled files
+*.class
+#Build/output folders
+bin/
+out/
+#zip files
+*.zip
 /.metadata/
+

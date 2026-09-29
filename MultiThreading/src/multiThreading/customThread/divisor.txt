@@ -1,0 +1,6 @@
+Divisor of 32 are: 1 2 4 8 16 32 
+Divisor of 92 are: 1 2 4 23 46 92 
+Divisor of 52 are: 1 2 4 13 26 52 
+Divisor of 29 are: 1 29 
+Divisor of 35 are: 1 5 7 35 
+Divisor of 82 are: 1 2 41 82 
