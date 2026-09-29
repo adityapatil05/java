@@ -1,4 +1,4 @@
-package dsa;
+package dsa.queue;
 
  public class CircularQueue {
     private int[] queue;
