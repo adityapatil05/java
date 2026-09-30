@@ -12,7 +12,7 @@ class Node{
 
 class LinkedList{
     Node head;  //Creating Head
-    int count;  //Creating count variable for size and Adding to last postion
+    int count;  //Creating count variable for size and Adding to last position
 
     public void addAtEnd(int data){
         Node newNode=new Node(data);
@@ -131,7 +131,6 @@ class LinkedList{
     }
 
     public void reverse(){
-        Node temp=head;
         Node previous=null;
         Node current=head;
         Node next;
