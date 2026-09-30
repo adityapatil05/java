@@ -104,6 +104,7 @@ class LinkedList{
         temp=temp.next;
     }
     temp.next=temp.next.next;
+    count--;
     }
 
     public void deleteEnd(){
