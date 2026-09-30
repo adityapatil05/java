@@ -116,6 +116,35 @@ class LinkedList{
         count--;
     }
 
+    public void deleteByValue(int value){
+        Node temp=head;
+        while(temp.next !=null){
+            if(temp.next.data==value){
+                temp.next=temp.next.next;
+
+            }
+            temp=temp.next;
+
+        }
+        count--;
+
+    }
+
+    public void reverse(){
+        Node temp=head;
+        Node previous=null;
+        Node current=head;
+        Node next;
+
+        while (current!=null){
+            next=current.next;
+            current.next=previous;
+            previous=current;
+            current=next;
+        }
+        head=previous;
+    }
+
     public int size(){
         return count;
     }
@@ -144,11 +173,20 @@ public class LinkedListTest {
 
         linkedList.deleteHead();
         linkedList.display();
-
         linkedList.deleteAtPosition(2);
         linkedList.display();
 
         linkedList.deleteAtPosition(8);
+
+
+        linkedList.addAtEnd(30);
+        linkedList.display();
+
+        linkedList.deleteByValue(9);
+        linkedList.display();
+
+        linkedList.reverse();
+        linkedList.display();
 
 
 
