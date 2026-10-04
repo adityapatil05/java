@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class MergeSort {
 
     static void main(String[] args) {
-        int[] arr={21,11,43,56,7,88};
+        int[] arr={21,11,43,56,7,88,1};
         mergeSort(arr,0, arr.length-1);
         System.out.println(Arrays.toString(arr));
     }
