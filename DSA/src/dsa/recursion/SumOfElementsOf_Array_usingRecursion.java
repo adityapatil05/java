@@ -7,7 +7,7 @@ public class SumOfElementsOf_Array_usingRecursion {
     }
 
     static void main(String[] args) {
-        int[] arr={1,3,4,5,6};
+        int[] arr={0,1,3,4,5,6};
         System.out.println(sum(arr,0));
     }
 }

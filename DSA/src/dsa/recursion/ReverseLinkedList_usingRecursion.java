@@ -28,13 +28,25 @@ public class ReverseLinkedList_usingRecursion {
         temp.next = newNode;
 
     }
-    public static Node reverseusingrecursion(Node head){
-        if(head==null)return head;
+    public static Node reverselist(Node head){
+        return reverseusingrecursion(null,head);
+    }
+    public static Node reverseusingrecursion(Node prev ,Node current){
+        if(current==null)return prev;
 
-        Node newHead = reverseusingrecursion(head.next);
-        System.out.println(head.data);
-        return newHead;
+         Node next=current.next;
+        current.next=prev;
 
+        return reverseusingrecursion(current,next);
+
+    }
+    public void display(Node head){
+        Node temp=head;
+        while(temp!=null){
+            System.out.println(temp.data);
+            temp=temp.next;
+        }
+        System.out.println("null");
     }
 
     static void main(String[] args) {
@@ -46,8 +58,11 @@ public class ReverseLinkedList_usingRecursion {
         list.addAtEnd(40);
         list.addAtEnd(50);
 
-        reverseusingrecursion(list.head);
+        list.display(list.head);
+        System.out.println("***************8");
+        list.head=reverselist(list.head);
 
+        list.display(list.head);
     }
 
 }
