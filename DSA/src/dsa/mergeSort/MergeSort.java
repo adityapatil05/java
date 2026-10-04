@@ -23,7 +23,7 @@ public static void mergeSort(int[] arr,int left,int right)
 public static void mergeArray(int[] arr, int left, int mid,int right){
         int n1=mid-left+1;
         int n2=right-mid;
-        int[] arr1=new int[n1];
+        int [] arr1=new int[n1];
         int[] arr2 =new int[n2];
 
         for(int i=0;i<n1;i++){
