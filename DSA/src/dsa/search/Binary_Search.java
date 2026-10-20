@@ -1,4 +1,4 @@
-package asign;
+package dsa.search;
 
 public class Binary_Search {
 
